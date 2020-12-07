@@ -9,7 +9,7 @@ import Cart from '../Screens/Cart/index';
 const BookStack = createStackNavigator();
 export default () => (
     <NavigationContainer>
-        <BookStack.Navigator>
+        <BookStack.Navigator headerMode="none">
             <BookStack.Screen name="booklist" component={BookList} />
             <BookStack.Screen name="cart" component={Cart} />
         </BookStack.Navigator>
