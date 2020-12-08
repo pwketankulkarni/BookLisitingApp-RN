@@ -11,7 +11,8 @@ export default StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: 'center',
-        backgroundColor: "#F8F8F8"
+        backgroundColor: "#F8F8F8",
+        marginTop: 40
     },
     cardStyle: {
         // borderWidth: 0.2,
@@ -58,5 +59,24 @@ export default StyleSheet.create({
         right: 20,
         color: "red"
 
+    },
+    badgeContainer: {
+        height: 25,
+        width: 25,
+        borderRadius: 15,
+        backgroundColor: "#FFA500",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    badgeText: {
+        color: "#FFF"
+    },
+    headerRight: {
+        flexDirection: "row",
+        alignItems: 'center',
+        marginRight: 10
+    },
+    errorText: {
+        color: '#FF0000'
     }
 });

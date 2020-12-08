@@ -50,8 +50,10 @@ const books = [
     }
 ]
 
-export default new Promise((resolve, reject) => {
-    setTimeout(() => {
-        resolve(books)
-    }, 5000);
-})
+export default () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(books)
+        }, 3000);
+    })
+}
