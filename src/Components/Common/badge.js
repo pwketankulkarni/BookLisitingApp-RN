@@ -9,7 +9,7 @@ const Badge = ({ count, style }) => (
     </View>
 )
 
-const mapStateToProps = ({ cart }) => ({
-    count: Object.keys(cart).length
+const mapStateToProps = ({ cart: { count } }) => ({
+    count
 })
 export default connect(mapStateToProps)(Badge)
