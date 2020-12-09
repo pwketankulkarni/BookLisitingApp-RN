@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/dist/FontAwesome';
 //screens
 import BookList from '../Screens/BookList';
 import Cart from '../Screens/Cart/index';
-import Badge from '../Components/Common/badge';
+import Shape from '../Components/Common/badge';
 
 import styles from '../Css';
 
@@ -22,7 +22,7 @@ const Navigation = () => (
           title: 'Book Shop',
           headerRight: () => (
             <View style={styles.headerRight}>
-              <Badge style={{marginRight: 10}} />
+              <Shape style={{marginRight: 10}} type="circle" />
               <TouchableOpacity onPress={() => navigation.navigate('cart')}>
                 <Icon name="shopping-cart" size={30} color="#0000FF" />
               </TouchableOpacity>

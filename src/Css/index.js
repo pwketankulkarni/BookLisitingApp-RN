@@ -43,12 +43,14 @@ export default StyleSheet.create({
     },
     title: {
         fontFamily: 'CircularStd-Bold',
-        color: "green",
         fontSize: 20,
+        color: "#000",
+        fontWeight: "bold",
         width: width * 0.40
     },
     address: {
-        width: width * 0.59
+        fontSize: 10,
+        width: width * 0.50
     },
     mobile: {
         marginTop: 5
@@ -58,12 +60,19 @@ export default StyleSheet.create({
         bottom: 20,
         right: 20,
         color: "red"
-
     },
     badgeContainer: {
         height: 25,
         width: 25,
         borderRadius: 15,
+        backgroundColor: "#FFA500",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    rectangleContainer: {
+        height: 35,
+        width: 35,
+        borderRadius: 10,
         backgroundColor: "#FFA500",
         justifyContent: "center",
         alignItems: "center"
@@ -78,5 +87,15 @@ export default StyleSheet.create({
     },
     errorText: {
         color: '#FF0000'
+    },
+    cartCount: {
+        flexDirection: "row",
+        alignItems: "center",
+        alignSelf: "auto",
+        marginBottom: 30
+    },
+    boldText: {
+        fontWeight: "bold",
+        fontSize: 20
     }
 });
